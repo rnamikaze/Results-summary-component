@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+.dummmy {
+
+    background-color: hsla(256, 72%, 46%, 1);
+    background-color: hsla(241, 72%, 46%, 0);
+    background-color: hsl(241, 81%, 54%);
+    background-color: hsl(252, 100%, 67%);
+    background-color: hsl(0, 100%, 67%);
+    background-color: hsl(39, 100%, 56%);
+    background-color: hsl(166, 100%, 37%);
+    background-color: hsl(234, 85%, 45%);
+    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(221, 100%, 96%);
+    background-color: hsl(241, 100%, 89%);
+    background-color: hsl(224, 30%, 27%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+body {
+    position: relative;
+    display: flex;
+
+    background-color: hsl(0, 0%, 100%);
+
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+
+    width: 50%;
+    height: max-content;
+
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+
+    box-shadow: 15px 25px 20px rgba(141, 185, 175, 0.153);
+}
+
+#main-tab {
+    flex-grow: 1;
+    width: 50%;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+    padding: 30px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-tab>* {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-tab>h3 {
+    color: hsl(241, 100%, 89%);
+    padding-bottom: 10px;
+    align-items: flex-start;
+}
+
+#main-tab>span {
+    color: hsl(241, 100%, 89%);
+    font-size: 1em;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+#main-tab>h1 {
+    align-items: flex-end;
+}
+
+#circle {
+    flex-grow: 0;
+    border-radius: 100%;
+    width: 14vw;
+    height: 14vw;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 0.9), hsla(241, 81%, 54%, 0.1));
+
+
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#circle:hover > #circle__big_number {
+    text-shadow: 0px 0px 40px hsla(0, 0%, 100%, 0.9);
+}
+
+#circle__big_number {
+    font-size: 4em;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    line-height: 1em;
+
+    transition: text-shadow 500ms cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+#circle__small_number {
+    font-size: 1em;
+    color: hsla(241, 100%, 89%, 0.650);
+}
+
+#main-tab>h1 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+#side_tab {
+    flex-grow: 1;
+    width: 50%;
+
+    padding: 30px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#side_tab > h3 {
+    padding-bottom: 20px;
+}
+#side_tab > * {
+    flex-grow: 1;
+}
+
+#side_tab > .item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 2;
+}
+
+#side_tab > .item-container > .tab-item {
+    padding: 17px 15px;
+    margin: 7px 0px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+
+    transition: padding-left 300ms ease-out;
+}
+#side_tab > .item-container > .tab-item:hover {
+    padding-left: 25px;
+}
+
+#side_tab > .item-container > .tab-item .icon {
+    padding-right: 10px;
+}
+
+#side_tab > .item-container > .tab-item > * {
+    display: flex;
+    align-items: center;
+
+    font-weight: 700;
+}
+
+#side_tab > .item-container > .tab-item > * > .score {
+    color: hsl(224, 30%, 27%);
+}
+
+#side_tab > .item-container > .tab-item > * > .max_score {
+    color: hsla(224, 30%, 27%, 0.508);
+    padding-left: 5px;
+}
+
+#reaction {
+    position: relative;
+    background-color: hsla(0, 100%, 67%, 0.070);
+}
+#reaction > * {
+    color: hsl(0, 100%, 67%);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 0.070);
+}
+#memory > * {
+    color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 0.070);
+}
+#verbal > * {
+    color: hsl(166, 100%, 37%);
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 0.070);
+}
+#visual > * {
+    color: hsl(234, 85%, 45%);
+}
+
+#side_tab > button {
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 50px;
+    border: 0px;
+    max-height: 50px;
+    min-height: 45px;
+    font-size: 1em;
+    font-weight: 700;
+
+    margin: 30px 0px 20px 0px;
+    color: hsl(0, 0%, 100%);
+
+    cursor: pointer;
+
+    transition: background-color 300ms ease-in-out;
+}
+#side_tab > button:hover {
+    background-color: hsla(224, 30%, 27%, 0.8);
+}
+
+.attribution {
+    position: absolute;
+
+    left: 0px;
+    bottom: 0px;
+
+    width: 100vw;
+
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+    main {
+        width: 50%;
+        height: max-content;
+
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 1100px) {
+    main {
+        width: 60%;
+        height: max-content;
+    }
+}
+@media screen and (max-width: 1000px) {
+    main {
+        width: 70%;
+        height: max-content;
+    }
+}
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 90%;
+    }
+    main {
+        width: 80%;
+        height: 100%;
+
+        flex-direction: column;
+
+        border-radius: 0px;
+    }
+    main > * {
+        width: 100vw;
+    }
+    #main-tab {
+        width: auto;
+        flex-grow: 1;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    #main-tab>* {
+        margin: 5px 0px;
+    }
+    #main-tab>h1 {
+        font-size: 1.6em;
+    }
+    #circle {
+        width: 40vw;
+        height: 40vw;
+    }
+    #side_tab {
+        width: auto;
+        flex-grow: 1;
+    }
+    #side_tab {
+        padding: 20px 30px;
+    }
+    #side_tab > button {
+        max-height: 50px;
+        min-height: 45px;
+    }
+}
+@media screen and (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+}
