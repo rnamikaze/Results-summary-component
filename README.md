@@ -31,7 +31,7 @@ Screenshot 1440px 1080px
 
 ### Links
 
-- Live Site URL: [Github Pages](https://rnamikaze.github.io/Results-summary-component)
+- Live Site URL: [Vercel](https://results-summary-component-gules.vercel.app/)
 
 ## My process
 
