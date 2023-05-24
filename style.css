@@ -285,6 +285,7 @@ main {
         width: 80%;
         height: 100%;
 
+        overflow-y: scroll;
         flex-direction: column;
 
         border-radius: 0px;
